@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-template-hexagonal",
+  "description": "This is a project to serve as a template for hexagonal architecture implementation using node.js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^4.4.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.15"
+  },
+  "author": "Nicolas Eckell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasEckell/nodejs-template-hexagonal.git"
+  },
+  "keywords": [
+    "template",
+    "hexagonal",
+    "nodejs",
+    "apirest"
+  ]
+}
