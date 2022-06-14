@@ -1,18 +1,14 @@
-#!/usr/bin/env node
+import dotenv from "dotenv";
+import http from "http";
+import app from "../src/app.js";
 
-/**
- * Module dependencies.
- */
-
-var app = require("../src/app.js");
-var debug = require("debug")("app-template:server");
-var http = require("http");
+dotenv.config()
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.APP_PORT || "3001");
+var port = normalizePort(process.env.APP_PORT);
 app.set("port", port);
 
 /**
@@ -82,5 +78,4 @@ function onError(error) {
 function onListening() {
 	var addr = server.address();
 	var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
-	debug("Listening on " + bind);
 }
